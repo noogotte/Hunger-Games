@@ -1,0 +1,7 @@
+name: ${project.name}
+version: ${project.version}-b${BUILD_NUMBER}
+
+author: noogotte
+website: ${project.url}
+
+main: fr.noogotte.hunger_games.HungerGamePlugin
