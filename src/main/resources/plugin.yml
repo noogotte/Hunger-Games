@@ -5,3 +5,15 @@ author: noogotte
 website: ${project.url}
 
 main: fr.noogotte.hunger_games.HungerGamePlugin
+
+commands:
+    hungergame:
+        description: "Main command"
+        usage: "<subcommand>"
+        aliases: ["hunger"]
+
+    # Game Commands
+    "hungergame init":
+        description: "Create a new Hunger-Games"
+        usage: ""
+        permission: "hunger.init"

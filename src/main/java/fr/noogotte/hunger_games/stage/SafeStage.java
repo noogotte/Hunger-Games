@@ -24,9 +24,17 @@ public class SafeStage extends Stage implements Listener {
 
     @Override
     public void start() {
+        game.getGame().sendMessages(game.getMessages().get("safeStage.start", 
+                game.getConfig().getSafeDuration()));
     }
 
     @Override
     public void stop() {
+        game.getGame().sendMessages(game.getMessages().get("safeStage.stop"));
+    }
+
+    @Override
+    public String getName() {
+        return "JoinStage";
     }
 }

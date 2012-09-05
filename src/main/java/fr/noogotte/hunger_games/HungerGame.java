@@ -20,10 +20,10 @@ public class HungerGame {
     private Stage stage;
     private Game game;
 
-    public HungerGame(HungerGamePlugin plugin, Stage stage) {
+    public HungerGame(HungerGamePlugin plugin) {
         this.plugin = plugin;
         reloadConfig();
-        this.stage = stage;
+        this.stage = null;
         this.game = null;
     }
 
@@ -76,6 +76,11 @@ public class HungerGame {
         stage = newStage;
         registerStageListeners();
         stage.start();
+    }
+
+    public void init(Game game, Stage stage) {
+        this.game = game;
+        nextStage(stage);
     }
 
     public boolean isRunning() {

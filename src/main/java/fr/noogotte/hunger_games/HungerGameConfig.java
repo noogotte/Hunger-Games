@@ -6,12 +6,17 @@ public class HungerGameConfig {
 
     private Locale locale = Locale.FRANCE;
     private int safeDuration = 60;
+    private int maxGameDuration = 60;
+
+    public Locale getLocale() {
+        return locale;
+    }
 
     public int getSafeDuration() {
         return safeDuration;
     }
 
-    public Locale getLocale() {
-        return locale;
+    public int getMaxGameDuration() {
+        return maxGameDuration;
     }
 }

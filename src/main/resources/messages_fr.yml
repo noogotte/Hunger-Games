@@ -1,0 +1,3 @@
+safeStage.start: "La partie est commencé, vous disposez de {0} pour vous équiper."
+safeStage.stop: "La phase est finie, sortez vos épées et puisse le sort vous être favorable"
+joinStage.start: "Un nouvelle partie a été lancé, faite \"/hunger join\" pour rejoindre la partie."

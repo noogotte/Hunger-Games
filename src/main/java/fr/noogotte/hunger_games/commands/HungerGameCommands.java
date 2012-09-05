@@ -6,7 +6,7 @@ import fr.noogotte.hunger_games.HungerGameConfig;
 
 public abstract class HungerGameCommands implements Commands {
 
-    private HungerGame game;
+    protected HungerGame game;
 
     public HungerGameCommands(HungerGame game) {
         this.game = game;
